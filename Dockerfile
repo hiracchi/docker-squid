@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM hiracchi/ubuntu-ja
 MAINTAINER Toshiyuki HIRANO <hiracchi@gmail.com>
 
 # packages install
@@ -18,5 +18,5 @@ ADD run_service.sh /root/run_service.sh
 RUN chmod +x /root/run_service.sh
 
 EXPOSE 3128
-VOLUME /var/spool/squid
+# VOLUME /var/spool/squid
 ENTRYPOINT /root/run_service.sh
