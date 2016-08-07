@@ -18,5 +18,4 @@ ADD run_service.sh /root/run_service.sh
 RUN chmod +x /root/run_service.sh
 
 EXPOSE 3128
-# VOLUME /var/spool/squid
 ENTRYPOINT /root/run_service.sh
