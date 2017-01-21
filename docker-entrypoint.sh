@@ -1,8 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
 set -e
-
-/etc/init.d/squid start
 
 if [ -z "$@" ]; then
     tail -f /dev/null
